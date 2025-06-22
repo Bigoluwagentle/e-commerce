@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <title>Product list with cart</title>
+</head>
+<body>
+  <!-- <a id="check"></a> -->
+
+  <div id="wrapper">
+    <section>
+      <img src="assets/images/icon-order-confirmed.svg" alt="">
+      <h1>Order Confirmed</h1>
+      <p>We hope you enjoy your food!</p>
+      <aside id="confirmAside"></aside>
+      <button>Start New Order</button>
+    </section>
+  </div>
+
+  <div id="container">
+    <section id="fillCart">
+      <h2>Desserts</h2>
+      <article></article>
+    </section>
+    <section id="emptyCart">
+
+      <main>
+        <h3>Your Cart(<b id="b">0</b>)</h3>
+        
+        <div class="emptyCart">
+          <img src="assets/images/illustration-empty-cart.svg" alt="">
+          <p>Your added item will appear here</p>
+        </div>
+
+        <nav class="addCart">
+          <footer id="footer">
+            <legend>
+              <p>Order Total</p>
+              <ul id="total">$45.00</ul>
+            </legend>
+            <li>This is a carbon-neutral delivery</li>
+            <button id="confirm">Confirmed Order</button>
+          </footer>
+        </nav>
+      </main>
+    </section>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>

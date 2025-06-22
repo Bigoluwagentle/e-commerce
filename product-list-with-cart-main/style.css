@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(13, 31%, 94%);
+}
+#wrapper{
+    width: 100%;
+    min-height: 130vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#wrapper > section{
+    width: 30%;
+    /* max-width: 28%; */
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#wrapper > section > img{
+    width: 30px;
+    margin: 20px 0px 10px 20px;
+}
+#wrapper > section > h1{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(14, 65%, 9%);
+}
+#wrapper > section > p{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: hsl(14, 25%, 72%);
+    margin-bottom: 20px;
+}
+#wrapper > section > aside{
+    background-color:  hsl(13, 31%, 94%);
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+#wrapper > section > aside > summary {
+    display: flex;
+    margin-bottom: 12px;
+}
+#wrapper > section > aside > summary > img{
+    width: 50px;
+}
+#wrapper > section > aside > summary > div{
+    flex: 1;
+    padding-left: 5px;
+}
+#wrapper > section > aside > summary > div > h4{
+    color: hsl(12, 20%, 44%);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+#wrapper > section > aside > summary > div > span{
+    color: hsl(14, 86%, 42%);
+}
+#wrapper > section > aside > summary > div > label{
+    color:  hsl(14, 25%, 72%);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 6px;
+}
+#wrapper > section > aside > summary > div > li{
+    float: right;
+    list-style-type: none;
+    color: hsl(12, 20%, 44%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-top: 15px;
+}
+#wrapper > section > aside > footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#wrapper > section > aside > footer > h4{
+    font-size: 13px;
+    color: hsl(7, 20%, 60%);
+}
+#wrapper > section > aside > footer > p{
+    color: hsl(14, 65%, 9%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+#wrapper > section > button{
+    display: block;
+    padding: 10px 0px;
+    width: 300px;
+    background-color: hsl(14, 86%, 42%);
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+#container{
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+#container #fillCart{
+    width: 75%;
+    min-height: 100vh;
+    margin: 40px 20px;
+}
+#container #fillCart h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container #fillCart article{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#container #fillCart article nav{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+#container #fillCart article nav div button{
+    position: absolute;
+    margin-top: -20px;
+    padding: 7px 20px;
+    border-radius: 20px;
+    color: hsl(14, 65%, 9%);
+    border: 1.5px solid hsl(7, 20%, 60%);
+    margin-left: 60px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+#container #fillCart article nav div button > img{
+    margin-left: 5px;
+}
+#container #fillCart article nav div > li{
+    list-style-type: none;
+    color: hsl(7, 20%, 60%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+#container #fillCart article nav div > p{
+    color:  hsl(12, 20%, 44%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+#container #fillCart article nav div > a{
+    color: hsl(14, 86%, 42%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container #emptyCart{
+    flex: 1;
+    margin-top: 30px;
+}
+#container #emptyCart main{
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+#container #emptyCart main h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(14, 86%, 42%);
+    margin-bottom: 10px;
+}
+#container #emptyCart main h3 b{
+    font-weight: normal;
+}
+#container #emptyCart main h3 + .emptyCart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+#container #emptyCart main h3 + .emptyCart > p{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(7, 20%, 60%);
+}
+#container #emptyCart main .addCart summary{
+    padding: 10px;
+    border-bottom: 1px solid hsl(13, 31%, 94%);
+}
+#container #emptyCart main .addCart summary h4{
+    color: hsl(14, 65%, 9%);
+    margin-bottom: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container #emptyCart main .addCart summary > img{
+    float: right;
+    padding: 4px;
+    border-radius: 100px;
+    border: 1px solid hsl(7, 20%, 60%);
+    cursor: pointer;
+    margin-top: 12px;
+}
+#container #emptyCart main .addCart summary > #quantity{
+    color: hsl(14, 86%, 42%);
+    margin-right: 5px;
+}
+#container #emptyCart main .addCart summary > span{
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(14, 25%, 72%);
+}
+#container #emptyCart main .addCart summary > #totalAdd{
+    color: hsl(7, 20%, 60%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    margin-left: 4px;
+}
+#container #emptyCart main .addCart{
+    display: none;
+}
+#container #emptyCart main .addCart footer{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container #emptyCart main .addCart footer legend{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-bottom: 20px;
+}
+#container #emptyCart main .addCart footer > li{
+    list-style-type: none;
+    padding: 10px;
+    background-color: hsl(13, 31%, 94%);
+    border-radius: 5px;
+    font-size: 12px;
+    color: hsl(12, 20%, 44%);
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#container #emptyCart main .addCart footer > button{
+    padding: 10px 0px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: hsl(14, 86%, 42%);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(14, 86%, 42%);
+    padding: 10px;
+    width: 140px;
+    height: 32px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -115px;
+    margin-left: 60px;
+}
+@media screen and (max-width: 900px){
+    #container #fillCart article nav{
+        width: 40%;
+    }
+    #container #fillCart{
+        width: 64%;
+    }
+    #container #fillCart article{
+        justify-content: space-between;
+    }
+    #container #fillCart article nav div button{
+        margin-left: 35px;
+    }
+    #wrapper > section{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 778px){
+    #container #fillCart article nav{
+        width: 100%;
+    }
+    #container{
+        flex-direction: column;
+    }
+    #container #fillCart{
+        width: 90%;
+    }
+    #container #fillCart article nav div button{
+        margin-left: 100px;
+    }
+    #wrapper > section{
+        width: 90%;
+    }
+}
