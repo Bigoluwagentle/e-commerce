@@ -1,4 +1,4 @@
-const apiUrl = "http://127.0.0.1:5500/product-list-with-cart-main/data.json";
+const apiUrl = "http://127.0.0.1:5500/data.json";
 const article = document.querySelector("article");
 const b = document.querySelector("#b");
 const addCart = document.querySelector(".addCart");
@@ -169,6 +169,3 @@ async function update() {
     }
 }
 update();
-window.onresize = function(){
-    document.getElementById("check").innerHTML = window.innerWidth;
-}
